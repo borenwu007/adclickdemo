@@ -18,7 +18,7 @@ while(1):
         driver.switch_to.frame(0)
         elem = WebDriverWait(driver,100).until(lambda dirver:driver.find_element_by_class_name(class_name))
         elem.click()
-        time.sleep(5)
+        time.sleep(10)
         driver.quit()
     except:
         print("未知异常")
